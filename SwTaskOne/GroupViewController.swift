@@ -82,7 +82,7 @@ class GroupViewController: UIViewController , UITableViewDelegate, UITableViewDa
         let secno = indexPath.section
         let data = self.allnames?[secno]
         if (secno == 0) {
-            let collection = GroupViewDetailsController()
+            let collection = DetailViewController()
             collection.title = data![indexPath.row]
             navigationController?.pushViewController(collection, animated: true)
         } else {
